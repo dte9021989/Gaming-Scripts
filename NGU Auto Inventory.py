@@ -5,7 +5,7 @@ import time
 s = 0.25
 
 #Set target pixel and color
-target_pixel = (1182,727) #Five from the end
+target_pixel = (1079,730)
 target_color = (130,130,130)
 
 #Delay before clicking back into the game
