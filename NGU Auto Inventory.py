@@ -5,7 +5,7 @@ import time
 s = 0.25
 
 #Set target pixel and color
-target_pixel = (1284,684)
+target_pixel = (1182,727) #Five from the end
 target_color = (130,130,130)
 
 #Delay before clicking back into the game
@@ -30,11 +30,28 @@ def condense_inventory():
     time.sleep(s)
     pag.click(960,362) #Click talisman
     time.sleep(s)
-    pag.click(927,740) #Click talisman in inventory
+    pag.click(826,576) #Click Chef boots
     time.sleep(s)
-    pag.click(871,728) #Click forest pendant in inventory
+    pag.click(878,578) #Click Chef pants
     time.sleep(s)
-    pag.keyUp("d")
+    pag.click(827,631) #Click beef
+    time.sleep(s)
+    pag.click(881,624) #Click Magicite talisman
+    time.sleep(s)
+    pag.click(831,676) #Click money face
+    time.sleep(s)
+    pag.click(877,672) #Click sword
+    time.sleep(s)
+    pag.click(832,731) #Click chef hat
+    time.sleep(s)
+    pag.click(884,728) #Click chef apron
+    time.sleep(s)
+    pag.click(930,731) #Click carrot
+    time.sleep(s)
+    pag.click(828,774) #Click forest amulet
+    time.sleep(s)
+    pag.click(882,777) #Click ring
+    time.sleep(s)
 
 def apply_boosts():
     time.sleep(s)
