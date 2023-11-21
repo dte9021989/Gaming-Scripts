@@ -161,17 +161,17 @@ def farming_plant_all():
         pag.click(watermelon)
         time.sleep(ms)
         pag.click(farming_crop_plant_button)
-    elif plant_choice == 9:
-        print("Planting Snape Grass")
-        time.sleep(ms)
-        pag.click(snape_grass)
-        time.sleep(ms)
-        pag.click(farming_crop_plant_button)
-    elif plant_choice == 10:
-        print("Planting Carrots")
-        time.sleep(ms)
-        pag.click(carrot)
-        time.sleep(ms)
-        pag.click(farming_crop_plant_button)
+    # elif plant_choice == 9:
+    #     print("Planting Snape Grass")
+    #     time.sleep(ms)
+    #     pag.click(snape_grass)
+    #     time.sleep(ms)
+    #     pag.click(farming_crop_plant_button)
+    # elif plant_choice == 10:
+    #     print("Planting Carrots")
+    #     time.sleep(ms)
+    #     pag.click(carrot)
+    #     time.sleep(ms)
+    #     pag.click(farming_crop_plant_button)
     else:
         print("An error with planting has occurred ")
