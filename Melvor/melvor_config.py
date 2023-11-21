@@ -10,6 +10,7 @@ farming_allotments = 2441,269
 farming_herbs = 2913,277
 farming_trees = 3445,264
 farming_harvest_all_button = 2492,365
+farming_apply_compost_button = 2713,360
 
 #Sleep timers
 s = 1
@@ -34,6 +35,7 @@ def goto_farming_tab():
 
 def farming_harvest_all():
     #Harvesting all crops via Harvest All button
+    print("Harvesting all crops ")
     pag.click(farming_tab)
     time.sleep(ss)
     pag.click(farming_tab)
@@ -50,24 +52,21 @@ def farming_harvest_all():
     time.sleep(ss)
     pag.click(farming_harvest_all_button)
 
-####
-# Main program
-####
-
-#Ask user for input on what function they want
-user_choice = input("Select number:\n"
-                    "1. Harvest all crops\n"
-                    "99. Exit\n")
-
-# Convert user_choice to integer for comparison
-try:
-    user_choice = int(user_choice)
-except ValueError:
-    print("Please enter a valid number.")
-
-#Perform function based on user input
-if user_choice == 1:
-    print('Harvesting all crops ')
-    farming_harvest_all()
-elif user_choice == 99:
-    print('Exiting ')
+def farming_apply_compost():
+    #Harvesting all crops via Harvest All button
+    print("Applying compost ")
+    pag.click(farming_tab)
+    time.sleep(ss)
+    pag.click(farming_tab)
+    time.sleep(ss)
+    pag.click(farming_allotments)
+    time.sleep(ss)
+    pag.click(farming_apply_compost_button)
+    time.sleep(ss)
+    pag.click(farming_herbs)
+    time.sleep(ss)
+    pag.click(farming_apply_compost_button)
+    time.sleep(ss)
+    pag.click(farming_trees)
+    time.sleep(ss)
+    pag.click(farming_apply_compost_button)
