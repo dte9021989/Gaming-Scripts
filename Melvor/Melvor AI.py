@@ -13,6 +13,7 @@ print("Config file loaded ")
 user_choice = input("Select number:\n"
                     "1. Harvest all crops\n"
                     "2. Apply compost\n"
+                    "3. Plant crops\n"
                     "99. Exit\n")
 
 # Convert user_choice to integer for comparison
@@ -26,5 +27,7 @@ if user_choice == 1:
     c.farming_harvest_all()
 elif user_choice == 2:
     c.farming_apply_compost()
+elif user_choice == 3:
+    c.farming_plant_all()
 elif user_choice == 99:
     print('Exiting ')
