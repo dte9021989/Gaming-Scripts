@@ -28,6 +28,6 @@ if user_choice == 1:
 elif user_choice == 2:
     c.farming_apply_compost()
 elif user_choice == 3:
-    c.farming_plant_all()
+    c.farming_allotments_plant_all()
 elif user_choice == 99:
     print('Exiting ')

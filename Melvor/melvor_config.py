@@ -95,7 +95,7 @@ def plant_action():
     time.sleep(ss)
     pag.click(farming_plant_all_button)
 
-def farming_plant_all():
+def farming_allotments_plant_all():
     plant_choice = input("Select number:\n"
                          "1. Potato\n"
                          "2. Onion\n"
