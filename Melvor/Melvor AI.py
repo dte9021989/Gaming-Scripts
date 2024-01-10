@@ -1,6 +1,7 @@
 import pyautogui as pag
 import time
 import melvor_config as c
+import combat_agent as ca
 print("Config file loaded ")
 
 
@@ -29,5 +30,7 @@ elif user_choice == 2:
     c.farming_apply_compost()
 elif user_choice == 3:
     c.farming_allotments_plant_all()
+elif user_choice == 4:
+    c.combat_auto_run()
 elif user_choice == 99:
     print('Exiting ')
